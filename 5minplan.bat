@@ -17,4 +17,6 @@ schtaks /delete /tn * /f &::disable scheduled tasks
 netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=in localport=445 action=block  &::block PSExec
 netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=out localport=445 action=block
 
-
+REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient”           &::disable LLMNR (No NTLM relaying for you Enzo)
+REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ” EnableMulticast” /t REG_DWORD /d “0” /f
+EnableMulticast” /t REG_DWORD /d “0” /f
