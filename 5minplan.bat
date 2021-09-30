@@ -25,23 +25,23 @@ netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=out localport
 
 notsytemMuniter64.exe -i config.xml -accepteula &::START SYSMON
 
-echo ""
-echo ""
-echo ""
-echo ""
+echo 
+echo 
+echo 
+echo 
 
 net user  &::Print out the users so user can change all the default passwords
 
-echo"-----------------------------"
+echo -----------------------------
 
-echo "remember to change these passwords"
-echo "remember to do set up for this machine"
-echo "You may find the fllowing sysinternals things useful: Process exporer (enable sig verification in settings), autoruns, Process Manager, tcpview"
-echo "IF THIS IS A DNS MACHINE MAKE 7 BACKUPS IN 20 DIFFRENT PLACES: Windows\System32\DNS Directory"
-echo "alias robocopy <file> to some location you need admin perms to delete (not sure about this one)"
-echo "Turn of sticky keys"
-echo "check group policy. For the most part enabled things are sus"
-echo "turn off NTBIOS (adapter settings advanced) and LLMNR(group policy DNS)"
-echo "check PAM"
-echo "Also right click on the very important background image and set it as desktop"
+echo remember to change these passwords
+echo remember to do set up for this machine
+echo You may find the fllowing sysinternals things useful: Process exporer (enable sig verification in settings), autoruns, Process Manager, tcpview
+echo IF THIS IS A DNS MACHINE MAKE 7 BACKUPS IN 20 DIFFRENT PLACES: Windows\System32\DNS Directory
+echo alias robocopy <file> to some location you need admin perms to delete (not sure about this one)
+echo Turn of sticky keys
+echo check group policy. For the most part enabled things are sus
+echo turn off NTBIOS (adapter settings advanced) and LLMNR(group policy DNS)
+echo check PAM
+echo Also right click on the very important background image and set it as desktop
 
