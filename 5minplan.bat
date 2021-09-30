@@ -9,7 +9,7 @@ net user defaultuser0 redteamsmells
 
 wmic useraccount where name='Administrator' rename 22705adminHIREDTEAM  &::Change default account names just to mess with redteam
 wmic useraccount where name='Guest' rename 22705guestPLZNOHACK
-wmic useraccount where name='defaultAccount' rename 22705defaultAccountYOUCANNEVERFINDMYPASSWORDS
+wmic useraccount where name='DefaultAccount' rename 22705defaultAccountYOUCANNEVERFINDMYPASSWORDS
 wmic useraccount where name='defaultuser0' rename 22705duser0RSTHISISUSELESS
 
 netsh  advfirewall set allprofiles state on &::turn on firewall
