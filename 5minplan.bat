@@ -1,6 +1,6 @@
 @echo off
 
-&::To whoever on white team looks at this: I may change the passwords, account names and system paths from their current values.
+::To whoever on white team looks at this: I may change the passwords, account names and system paths from their current values.
 
 net user Administrator blueteamrocks &::quickly change default password
 net user guest blueteambestteam      &::quickly change default password
