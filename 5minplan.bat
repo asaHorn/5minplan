@@ -6,7 +6,7 @@ net user Administrator blueteamrocks &::quickly change default password
 net user guest blueteambestteam      &::quickly change default password
 
 wmic useraccount where name='Administrator' rename 22705adminHIREDTEAM  &::Change default account names just to mess with redteam
-wmic useraccount where name='Administrator' rename 90383guestPLZNOHACK
+wmic useraccount where name='Guest' rename 90383guestPLZNOHACK
 
 netsh  advfirewall set allprofiles state on &::turn on firewall
 
