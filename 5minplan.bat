@@ -7,6 +7,9 @@ net user guest blueteambestteam      &::quickly change default password
 net user DefaultAccount blueparrot
 net user defaultuser0 redteamsmells
 
+net user guest /active:no
+net user defaultuser0 /active:no
+
 wmic useraccount where name='Administrator' rename 22705adminHIREDTEAM  &::Change default account names just to mess with redteam
 wmic useraccount where name='Guest' rename 22705guestPLZNOHACK
 wmic useraccount where name='DefaultAccount' rename 22705defaultAccountYOUCANNEVERFINDMYPASSWORDS
