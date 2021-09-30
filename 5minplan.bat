@@ -20,3 +20,5 @@ netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=out localport
 
 REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient”           &::disable LLMNR (No NTLM relaying for you Enzo)
 REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ”EnableMulticast” /t REG_DWORD /d “0” /f
+
+net user  &::Print out the users so user can change all the default passwords
