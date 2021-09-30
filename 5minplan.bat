@@ -23,14 +23,15 @@ schtasks /delete /tn * /f &::disable scheduled tasks
 netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=in localport=445 action=block  &::block PSExec
 netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=out localport=445 action=block
 
-REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient\            &::disable LLMNR (No NTLM relaying for you Enzo)
-REG ADD ” HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ” EnableMulticast” /t REG_DWORD /d “0” /f 
+notsytemMuniter64.exe -i config.xml -accepteula &::START SYSMON
+
+echo ""
+echo ""
+echo ""
+echo ""
 
 net user  &::Print out the users so user can change all the default passwords
 
-notsytemMuniter64.exe -i config.xml -accepteula &::START SYSMON
-
-echo "\n\n\n\n\n"
 echo"-----------------------------"
 
 echo "remember to change these passwords"
@@ -40,6 +41,7 @@ echo "IF THIS IS A DNS MACHINE MAKE 7 BACKUPS IN 20 DIFFRENT PLACES: Windows\Sys
 echo "alias robocopy <file> to some location you need admin perms to delete (not sure about this one)"
 echo "Turn of sticky keys"
 echo "check group policy. For the most part enabled things are sus"
+echo "turn off NTBIOS (adapter settings advanced) and LLMNR(group policy DNS)"
 echo "check PAM"
 echo "Also right click on the very important background image and set it as desktop"
 
