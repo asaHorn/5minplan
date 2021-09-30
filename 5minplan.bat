@@ -1,6 +1,6 @@
 @echo off
 
-&::To whoever on white team looks at this: I may change the passwords, acount names and system paths from their current values.
+&::To whoever on white team looks at this: I may change the passwords, account names and system paths from their current values.
 
 net user Administrator blueteamrocks &::quickly change default password
 net user guest blueteambestteam      &::quickly change default password
@@ -29,7 +29,7 @@ REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ”Enabl
 
 net user  &::Print out the users so user can change all the default passwords
 
-&::START SYSMON HERE
+notsytemMuniter64.exe -i config.xml &::START SYSMON
 
 echo "remember to change these passwords"
 echo "remember to do set up for this machine"
