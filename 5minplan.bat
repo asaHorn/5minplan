@@ -1,5 +1,6 @@
 @echo off
-net user %1 blueteamrocks &::quickly change default password
+net user Administrator blueteamrocks &::quickly change default password
+net user guest blueteambestteam      &::quickly change default password
 
 netsh  advfirewall set allprofiles state on &::turn on firewall
 
@@ -18,5 +19,4 @@ netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=in localport=
 netsh advfirewall firewall add rule name="PSExec" protocol=TCP dir=out localport=445 action=block
 
 REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient”           &::disable LLMNR (No NTLM relaying for you Enzo)
-REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ” EnableMulticast” /t REG_DWORD /d “0” /f
-EnableMulticast” /t REG_DWORD /d “0” /f
+REG ADD  “HKLM\Software\policies\Microsoft\Windows NT\DNSClient” /v ”EnableMulticast” /t REG_DWORD /d “0” /f
