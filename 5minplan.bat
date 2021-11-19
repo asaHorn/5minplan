@@ -7,6 +7,16 @@ net user guest blueteambestteam      &::quickly change default password
 net user DefaultAccount blueparrot
 net user defaultuser0 redteamsmells
 
+net user "Sharon Webber" plebyPerfectionDude
+net user "Enzo De Surfer" plebyPerfectionDude
+net user "Kalya Shredsalot" plebyPerfectionDude
+net user "Pablo Waves" plebyPerfectionDude
+net user "Micheal Ho" plebyPerfectionDude
+net user "Frieda Zamba" plebyPerfectionDude
+net user "Andy Irons" plebyPerfectionDude
+net user "Margo Oberg" plebyPerfectionDude
+net user "Duke Kanhanamoku" plebyPerfectionDude
+
 net user guest /active:no
 net user defaultuser0 /active:no
 
